@@ -10,6 +10,10 @@ class PyList {
 
         ~PyList();
 
+        unsigned getSize() const;
+
+        void append(Item it);
+
         private:
             Item *myArray;
             unsigned myCapacity;
